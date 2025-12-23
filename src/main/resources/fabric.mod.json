@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "echoes-and-excavations",
+	"version": "${version}",
+	"name": "Echoes & Excavations",
+	"description": "An upcoming Minecraft update for Q4 2026! Made with love.",
+	"authors": [
+		"Orient"
+	],
+	"contact": {
+		"homepage": "https://echoesandexcavations.net/",
+		"sources": "https://github.com/Echoes-And-Excavations-Update/echoes-excavations-26.4"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/echoes-and-excavations/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.echoes.excavations.EchoesExcavations"
+		],
+		"fabric-datagen": [
+			"net.echoes.excavations.EchoesExcavationsDataGenerator"
+		],
+		"client": [
+			"net.echoes.excavations.EchoesExcavationsClient"
+		]
+	},
+	"mixins": [
+		"echoes-and-excavations.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
